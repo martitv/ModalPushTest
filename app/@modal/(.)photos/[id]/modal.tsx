@@ -23,6 +23,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
       <dialog ref={dialogRef} className="modal" onClose={onDismiss}>
         {children}
         <button onClick={onDismiss} className="close-button" />
+        <button onClick={() => router.push("/")} />
       </dialog>
     </div>,
     document.getElementById('modal-root')!
